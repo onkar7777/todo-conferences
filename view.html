@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      .wrapper{
+          width: 100%;
+         
+      }
+      .conference-box{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 50px;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 20%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+  padding: 2px 16px;
+}
+    @media screen and (max-width:786px){
+        .card{
+            width: 100%;
+        }
+        .conference-box{
+            flex-direction: column;
+        }
+    }
+  </style>
+</head>
+<body>
+    <div class="wrapper" >
+        <div class="conference-box" >
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/konfhub.appspot.com/o/'%2Fconference-photos%2F'hollywood-sign-1598473_640.jpg?alt=media&token=7917c89d-005a-4652-ad47-3f7984181832" alt="Avatar" style="width:100%">
+                <div class="card-container">
+                  <h4><b>John Doe</b></h4> 
+                  <p>Architect & Engineer</p> 
+                </div>
+            </div>  
+        </div>
+    </div>
+    <script>
+        var str = "The best things delhi life are free";
+  var patt = new RegExp("delhi")
+  var res = patt.test(str);
+  console.log(res);
+
+    </script>
+</body>
+</html>
